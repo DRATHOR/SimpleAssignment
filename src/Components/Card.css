@@ -1,0 +1,61 @@
+.card{
+    /* display: flex; */
+
+    min-width:400px;
+    min-height: 50px;
+    border:1px solid #D1DBEB;
+    padding:20px 10px 10px;
+    border-radius: 3px;
+    
+}
+.card_details{
+    display: flex;
+}
+.card_icon{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:80px;
+    /* background-color: red; */
+}
+.card_icon_circle{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border:3px solid green;
+}
+.vertical_line{
+    height: 20px;
+    width: 50px;
+    border-right: 1px dashed gray;
+}
+.card_info{
+
+}
+.card_info>h4,p{
+    padding:0;
+    margin:0;
+}
+p{
+    color:#9B9B9B;
+}
+.time_info{
+    display: flex;
+    justify-content: space-between;
+    color:#6F6F6F;
+}
+.date_time{
+    /* display: flex; */
+    color:#6F6F6F;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    padding:5px 0;
+}
+.card_name_info{
+    color: #FA741F;
+}

@@ -1,0 +1,18 @@
+.inputfield{
+    display: flex;
+    flex:1;
+    border:1px solid #D1DBEB;
+    border-radius:3px;
+    height:30px;
+   
+}
+.inputfield_icon{
+    width:30px;
+    height:30px;
+    border-left:1px solid #D1DBEB;
+}
+.inputfield>input{
+    flex:1;
+    outline: none;
+    border:none;
+}

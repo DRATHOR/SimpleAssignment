@@ -1,0 +1,18 @@
+.action_button{
+    border:1px solid #C1C1C1;
+    border-radius:3px ;
+    color: #686868;
+    padding:10px 40px;
+    background-color: #ffffff;
+    min-width: 195px;
+    /* flex:1; */
+}
+.apply{
+
+    border:1px solid #FA741F;
+    border-radius:3px ;
+    color: #FA741F;
+}
+.mr-10{
+    margin-right:10px;
+}

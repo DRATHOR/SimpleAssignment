@@ -1,0 +1,7 @@
+.nav{
+    /* display: flex; */
+    margin:10px;
+}
+.nav_items{
+    display: flex;
+}

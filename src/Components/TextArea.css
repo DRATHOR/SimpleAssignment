@@ -1,0 +1,14 @@
+.text_container{
+    display: flex;
+    border:1px solid #D1DBEB;
+
+}
+.textarea_main{
+    display: flex;
+    flex:1;
+    /* border:1px solid #D1DBEB; */
+    border-radius: 3px;
+    border:0px;
+    min-height: 149px;
+    outline: none;
+}

@@ -1,0 +1,17 @@
+.subheader_container{
+    display: flex;
+    padding:10px 0;
+}
+.subheader_items{
+    display: flex;
+    /* flex:1; */
+    justify-content: center;
+    padding:10px 10px 10px 10px;
+    margin-right: 10px;
+    border-bottom: 3px solid  white;
+    min-width: 80px;
+}
+.active_tab{
+    border-bottom: 1px solid  #FA741F;
+    background-color: #FDF0D4;
+}
