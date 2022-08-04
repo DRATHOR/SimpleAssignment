@@ -77,8 +77,12 @@ const About = () => {
                                 <DropDown title="Task Type" required />
                                 <DropDown title="Assign To" required />
                                 <div className="row">
-                                    <DatePicker/>
-                                    <DatePicker/>
+                                    <Grid container spacing={2}>
+                                        <Grid item xm={6} sm={6} md={6} lg={6}><DatePicker/></Grid>
+                                        <Grid item xm={6} sm={6} md={6} lg={6}><DatePicker/></Grid>
+                                    </Grid>
+                                    {/* <DatePicker/>
+                                    <DatePicker/> */}
 
                                     {/* <div className='first'>
                                         <DatePicker title="Start Date" />
