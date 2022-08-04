@@ -15,3 +15,6 @@
     border-bottom: 1px solid  #FA741F;
     background-color: #FDF0D4;
 }
+.align-item-left{
+    justify-content: flex-start;
+}

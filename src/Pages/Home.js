@@ -1,3 +1,4 @@
+import { Grid } from '@mui/material'
 import React, { useState } from 'react'
 import { Button } from '../Components/Button'
 import Card from '../Components/Card'
@@ -5,14 +6,13 @@ import DatePicker from '../Components/DatePicker'
 import DropDown from '../Components/DropDown'
 import Inputfield from '../Components/Inputfield'
 import NavBar from '../Components/NavBar'
+import Paper from '../Components/Paper'
+import SubHeaderTabs from '../Components/SubHeaderTabs'
 import Table from '../Components/Table'
-import Tabs from '../Components/Tabs'
-import SubHeaderTabs from '../Components//SubHeaderTabs'
 import TextArea from '../Components/TextArea'
 import './Home.css'
-import Paper from '../Components/Paper'
 
-const Home = () => {
+const About = () => {
     const [details, setDetails] = useState([
         {
             title: 'Informed Product Features',
@@ -60,16 +60,20 @@ const Home = () => {
             color:'right'
         },
     ])
-    return (
-        <div className='home'>
-            <NavBar />
-            <Tabs />
-            <div className='container'>
-                <div class="container_first">
-                    <Paper>
-                        <SubHeaderTabs />
+
+  return (
+    
+       <Grid container spacing={2}>
+        <Grid item xs={12}>
+            <NavBar/>
+        </Grid>
+  <Grid item xm={12} sm={12} md={12} lg={8}>
+  <Paper>
+  <SubHeaderTabs />
                         <div className='container_form'>
-                            <div className='container_form_first'>
+                            <Grid container spacing={2}>
+                               <Grid item xm={12} sm={12} md={12} lg={8}>
+                               <div className='container_form_first'>
                                 <DropDown title="Task Type" required />
                                 <DropDown title="Assign To" required />
                                 <div className="row">
@@ -87,11 +91,17 @@ const Home = () => {
                                 <DatePicker title="Remind On" />
 
                             </div>
-                            <div className='container_form_second'>
+                                </Grid> 
+                               <Grid item xm={12} sm={12} md={12} lg={4}>
+                               <div className='container_form_second'>
                                 <Inputfield title='Select'/>
                                 <TextArea title='Details'/>
 
                             </div>
+                                </Grid> 
+                            </Grid>
+                           
+                           
                         </div>
                         <div className='container_action'>
                             <Button title="Cancle" className='mr-10' />
@@ -103,44 +113,24 @@ const Home = () => {
                             <Button />
                         </div> */}
                     </Paper>
-
-
-
-                </div>
-                <div class="container_second">
-                    <Paper>
+  </Grid>
+  <Grid item xm={12} sm={12} md={12} lg={4} >
+  <Paper>
                         <DropDown />
                         <hr className='divider'/>
                         {details.map((item, i) => {
                             return (
+                                <Grid item xm={12} sm={12} md={12} lg={4}>
                                 <Card item={item} index={i} length={details.length-1}/>
+
+                                </Grid>
                             )
                         })}
                     </Paper>
+  </Grid>
+        </Grid>
 
-                </div>
-
-            </div>
-            {/* header */}
-            {/* tabs */}
-            {/* split div */}
-            {/* first div */}
-            {/* tabs header */}
-            {/* split div */}
-            {/* first div */}
-            {/*dropdown -2 */}
-            {/* 2 date picken in one row */}
-            {/* date picker in one row */}
-            {/* second div */}
-            {/* one input */}
-            {/* text area  */}
-            {/* bottom bar having 2-button  */}
-            {/* Table */}
-            {/* view more button with down arrow */}
-            {/* ------------------------------------------- */}
-            {/* second div */}
-        </div>
-    )
+  )
 }
 
-export default Home
+export default About
