@@ -9,6 +9,7 @@ import NavBar from '../Components/NavBar'
 import Paper from '../Components/Paper'
 import SubHeaderTabs from '../Components/SubHeaderTabs'
 import Table from '../Components/Table'
+import Tabs from '../Components/Tabs'
 import TextArea from '../Components/TextArea'
 import './Home.css'
 
@@ -67,7 +68,11 @@ const About = () => {
         <Grid item xs={12}>
             <NavBar/>
         </Grid>
+        <Grid item xs={12}>
+        <Tabs/>
+    </Grid>
   <Grid item xm={12} sm={12} md={12} lg={8}>
+   
   <Paper>
   <SubHeaderTabs />
                         <div className='container_form'>

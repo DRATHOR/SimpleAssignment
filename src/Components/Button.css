@@ -5,6 +5,7 @@
     padding:10px 40px;
     background-color: #ffffff;
     min-width: 195px;
+    cursor: pointer;
     /* flex:1; */
 }
 .apply{

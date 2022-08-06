@@ -20,7 +20,7 @@ const Tags = ({ data }) => {
                         <div id={index} className={`tags ${index == selectedTag ? 'success' : ''}`} onClick={onClickHandler}>
                             <div id={index} className="Tags_container" onClick={onClickHandler}>
                             </div>
-                            <div className='tags_title'>
+                            <div className='tags_title' onClick={onClickHandler}>
                                 {item.title}
                                 <div className='circle'>
                                     {index == selectedTag && <FcOk size={30} />}

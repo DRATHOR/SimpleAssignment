@@ -1,4 +1,5 @@
 import React from 'react';
+import {IoIosArrowDown } from 'react-icons/io';
 import './Table.css'
 
 const Table = () => {
@@ -27,7 +28,7 @@ const Table = () => {
 </table>
 
  <div className='footer'>
-    view more 
+    view more <IoIosArrowDown style={{marginTop:'5px', color:'#FA741F'}}/>
   </div>
 
     </div>

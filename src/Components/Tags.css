@@ -1,4 +1,5 @@
 .tags{
+
     display: flex;
     align-items: center;
     /* background-color: red; */
@@ -8,6 +9,7 @@
     border-right: none;
     /* z-index: 1; */
     color:inherit;
+    cursor: pointer;
     margin-right: 18px;
 }
 .tags p{

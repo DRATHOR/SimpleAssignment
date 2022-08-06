@@ -12,10 +12,15 @@
     width:30px;
     height:30px;
     border-left:1px solid #D1DBEB;
+    cursor: pointer;
 }
 .datepicker>input{
     flex:1;
     outline: none;
     border:none;
     padding:8px;
+    cursor: pointer;
+}
+input[type="date"]{
+
 }
