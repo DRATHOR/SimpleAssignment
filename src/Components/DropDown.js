@@ -22,7 +22,7 @@ setIsOpen(!isOpen);
 
   return (
     <div>
-    <Lable title={title} required={required}/>
+   {title&& <Lable title={title} required={required}/>}
     {/* <div className='dropdown'>
       <input type="text" required={required}/><span className="dropdown_arrow" onClick={onClickHandlar}><IoIosArrowDown/></span>
     </div>

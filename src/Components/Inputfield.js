@@ -6,7 +6,7 @@ const Inputfield = ({title,required}) => {
   return (
     <>
     <div >
-    <Lable title={title} required={required}/>
+   {title && <Lable title={title} required={required}/>}
     <div className='inputfield'>
       <input type="text"  required={required}  />
       {/* <span className="inputfield_icon"></span> */}

@@ -86,15 +86,7 @@ const About = () => {
                                         <Grid item xm={6} sm={6} md={6} lg={6}><DatePicker/></Grid>
                                         <Grid item xm={6} sm={6} md={6} lg={6}><DatePicker/></Grid>
                                     </Grid>
-                                    {/* <DatePicker/>
-                                    <DatePicker/> */}
-
-                                    {/* <div className='first'>
-                                        <DatePicker title="Start Date" />
-                                    </div>
-                                    <div className='second'>
-                                        <DatePicker title="End Date" />
-                                    </div> */}
+                                    
 
                                 </div>
                                 <DatePicker title="Remind On" />
